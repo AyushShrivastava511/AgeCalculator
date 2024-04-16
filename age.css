@@ -1,62 +1,53 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
-body {
+body{
     background-color: cadetblue;
 }
-
-.container {
-    width: min(60%, 28.12em);
+.container{
+    width: min(60%,28.12em) ;
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
 }
-
-.container * {
+.container *{
     border: none;
     outline: none;
 }
-
-.input {
+.input{
     background-color: beige;
     padding: 1.87em 1.5em;
     border-radius: 0.5em;
-    box-shadow: 0 0.93em 1.25em rgba(0, 0, 0, 0.3);
-    margin-bottom: 3.12em;
+    box-shadow: 0 0.93em 1.25em rgba(0,0,0,0.3);
+    margin-bottom: 3.12em ;
     display: grid;
     grid-template-columns: 9fr 3fr;
     gap: 1em;
 }
-
-input,
-button {
+input,button{
     font-weight: 500;
     border-radius: 0.31em;
 }
-
-input {
+input{
     background-color: blueviolet;
     color: blanchedalmond;
     padding: 1.2em 1.25em;
     font-size: 0.87em;
 }
-
-button {
-    color: white;
-    background-color: blueviolet;
+button{
+    color:white;
+    background-color:blueviolet ;
 }
-
-.output {
+.output{
     width: 100%;
     display: flex;
     justify-content: space-between;
-}
 
+}
 .output div {
     height: 6.25em;
     width: 6.25em;
@@ -66,48 +57,21 @@ button {
     display: grid;
     place-items: center;
     padding: 1.25em 0;
-    box-shadow: 0 0.93em 1.25em rgba(0, 0, 0, 0.3);
-}
+    box-shadow: 0 0.93em 1.25em rgba(0,0,0,0.3);
 
-span {
+}
+span{
     font-size: 1.87em;
     font-weight: 500;
 }
-
-p {
+p{
     font-size: 0.87em;
-    color: teal;
+    color:teal;
     font-weight: 400;
 }
-
-h1 {
+h1{
     padding-left: 40%;
-    color: purple;
+    color:purple;
     margin-top: 5%;
-}
-
-/* Responsive styles */
-
-@media only screen and (max-width: 768px) {
-    .container {
-        width: min(90%, 28.12em);
-    }
-
-    h1 {
-        padding-left: 10%;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .container {
-        width: min(90%, 28.12em);
-    }
-
-    .input {
-        display: block;
-    }
-
-    h1 {
-        padding-left: 5%;
-    }
+   
 }
